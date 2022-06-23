@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Message</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend><b>Your Message to "Example" Cafe:</b></legend>
+    <table>
+        <tr>
+        <td><label for="et">To:</label></td>          
+        <td>
+        <input list="whom">
+        <datalist id="whom">
+         <option value="Owner">
+         <option value="Manager">
+         <option value="Receptionist">
+         <option value="Deliver">
+        </datalist>
+        </td>
+        </tr>
+        <tr>
+        <td><label for="ye">Your email:</label></td>
+        <td><input type="email" name="ye" id="ye" size="20" maxlength="250"></td>
+        </tr>
+        <tr>
+        <td style="padding-bottom: 40px;"><label for="eb">Message</label></td>
+        <td><textarea name="eb" id="eb" cols="50" rows="15"></textarea><br>
+        <label for="sf">Attach File:</label><br>
+        <input type="file" name="sf" id="sf">
+        <input type="submit" value="Send"><br><br>
+        </td>
+        </tr>
+        <tr>
+        <td><label for="pm">Payment Method</label></td>
+        <td>
+            <input type="checkbox" name="cb1" id="cb1">
+            <label for="cb1">Cash</label><br>
+            <input type="checkbox" name="cb2" id="cb2">
+            <label for="cb2">Cheque</label><br>
+            <input type="checkbox" name="cb3" id="cb3">
+            <label for="cb3">KPay/WavePay</label><br>
+        </td>
+        </tr>          
+    </table>
+    </fieldset>
+    <br>
+    <fieldset>
+    <legend><b>How you found us:</b></legend>
+        <table>
+            <tr>
+            <td><label for="eB">How did you hear of us</label></td>
+            <td>
+            <select name="selReferrer">
+            <option value="google">Google</option>
+            <option value="ad">Local newspaper ad</option>
+            <option value="friend">Friend</option>
+            <option value="other">Other</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+            <td colspan="2"><input type="checkbox" name="cB" id="nls" checked="checked"> Ensure this box is checked if you would like to receive email updates </td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
